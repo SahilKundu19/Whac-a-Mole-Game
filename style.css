@@ -1,0 +1,105 @@
+html body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+html{
+    font-size: 8px;
+    background-image: url("./mario-bg.jpg");
+    background-size: cover;
+}
+body{
+    font-family: "Sofia",sans-serif;
+}
+.start{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.score{
+    color: #685e72;
+    text-align: center;
+    font-size: 4rem;
+    padding: 0px;
+}
+.title{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 1px;
+}
+.game{
+    width: 800px;
+    height: 400px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.hole{
+    flex:1 0 33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after{
+    display: block;
+    background: url("dirt.svg") bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+.mole{
+    background: url("mole.svg") bottom center no-repeat;
+    background-size: 30%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+
+.hole.up .mole{
+    top:-10px
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #04ff00;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\2755';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
