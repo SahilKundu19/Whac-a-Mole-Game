@@ -6,11 +6,17 @@ html body{
 }
 html{
     font-size: 8px;
-    background-image: url("./mario-bg.jpg");
     background-size: cover;
 }
-body{
-    font-family: "Sofia",sans-serif;
+body {
+    background-image: url("https://img.freepik.com/free-vector/bush-border_1308-3858.jpg?t=st=1732091148~exp=1732094748~hmac=6157ea28a0901f117db6b41b6cb83a07ef74071248924d9f2eec0340bce6129f&w=1480");
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f5f6fa; /* Optional: light background */
 }
 .start{
     text-align: center;
@@ -22,11 +28,19 @@ body{
     font-size: 4rem;
     padding: 0px;
 }
-.title{
+.title {
+    display: inline-block;
+    background-color: #feca57; /* Highlight color */
+    padding: 5px 10px;
+    font-family: 'Sofia', sans-serif;
+    font-size: 4rem;
+    color: #2d3436;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 5rem;
-    margin-bottom: 1px;
+    margin: 10px auto;
 }
+
 .game{
     width: 800px;
     height: 400px;
@@ -70,7 +84,7 @@ body{
     border-radius: 4px;
     background-color: #04ff00;
     border: none;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
     font-size: 28px;
     padding: 5px;
@@ -103,3 +117,10 @@ body{
     opacity: 1;
     right: 0;
   }
+
+  .timer {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 10px;
+}
