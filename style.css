@@ -9,7 +9,10 @@ html{
     background-size: cover;
 }
 body {
-    background-image: url("https://img.freepik.com/free-vector/bush-border_1308-3858.jpg?t=st=1732091148~exp=1732094748~hmac=6157ea28a0901f117db6b41b6cb83a07ef74071248924d9f2eec0340bce6129f&w=1480");
+    background-image: url("/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex; /* Use flexbox for alignment */
     flex-direction: column; /* Stack elements vertically */
     justify-content: center; /* Center vertically */
@@ -31,14 +34,14 @@ body {
 .title {
     display: inline-block;
     background-color: #feca57; /* Highlight color */
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-family: 'Sofia', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #2d3436;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .game{
